@@ -40,7 +40,7 @@ export default function Usertable() {
     const [userdata, setuserdata] = React.useState()
     const [loading, setLoading] = React.useState(true)
     const getusers = () => {
-        axios.get('http://localhost:8000/api/GetUser')
+        axios.get('https://mern-stack-crud-tt6b.onrender.com/api/GetUser')
             .then((res) => {
                 console.log(res.data.user)
                 setuser(res.data.user)
