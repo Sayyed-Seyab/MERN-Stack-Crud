@@ -54,7 +54,7 @@ export default function Usertable() {
 
     const GetId = (id) => {
 
-        axios.delete(`http://localhost:8000/api/DeleteUser/${id}`)
+        axios.delete(`https://mern-stack-crud-tt6b.onrender.com/api/DeleteUser/${id}`)
             .then((res) => {
                 console.log(res);
                 setuser(user.filter(user => user._id !== id))
