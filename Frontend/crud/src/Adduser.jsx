@@ -27,7 +27,7 @@ export default function Adduser({user, setuser}) {
       const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form data:', formData);
-        axios.post("http://localhost:8000/api/CreateUser", formData)
+        axios.post("https://mern-stack-crud-tt6b.onrender.com/api/CreateUser", formData)
         .then((res)=>{
             console.log(res.data)
             SetMessage(res.data.Message)
