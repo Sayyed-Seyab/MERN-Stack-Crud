@@ -32,7 +32,7 @@ export default function Edituser({getid, user, setuser, userdata, onUpdateUser})
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form data:', formData);
-        axios.put(`http://localhost:8000/api/UpdateUser/${formData._id}`, formData)
+        axios.put(`https://mern-stack-crud-tt6b.onrender.com/api/UpdateUser/${formData._id}`, formData)
         .then((res)=>{
             console.log(res.data.updateuser)
             onUpdateUser(res.data.updateuser);
